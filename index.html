@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="buscadorContainer">
+        <h3><span>Search</span> Movie</h3>
+
+        <form class="form" id="form">
+          <div id="buscador">
+            <input type="text" placeholder="Buscar..." id="input" />
+            <button id="buscar">></button>
+          </div>
+
+          <div id="filtros">
+            <select name="type" id="type">
+              <div>
+                <option value=""></option>
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+              </div>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div id="resultados"></div>
+      <div id="navegacion"></div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>

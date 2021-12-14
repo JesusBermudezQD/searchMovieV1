@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Signika", sans-serif;
+    
+}
+body{
+    background-color: #000000;
+}
+
+.container {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto;
+    background-color: #000000;
+
+    grid-template-areas:
+    "buscadorContainer resultados resultados resultados"
+    "buscadorContainer resultados resultados resultados"
+    "buscadorContainer resultados resultados resultados"
+    "buscadorContainer navegacion navegacion navegacion";
+}
+
+.mensaje {
+    height: 100vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.buscadorContainer {
+    background: #d3d3d3;
+    grid-area: buscadorContainer;
+}
+
+.buscadorContainer h3 {
+    margin-top: 50px;
+    margin-left: 14px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.buscadorContainer h3 span {
+    font-size: 50px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form div {
+    background: white;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 45px;
+    width: 280px;
+    padding: 0;
+    display: flex;
+}
+
+.form #buscador input {
+    border-radius: 10px 0px 0px 10px;
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+
+.form #buscador button {
+    font-size: 30px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 0px 10px 0px 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.form #buscador button:active {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.form #filtros select {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.form #filtros select div {
+    gap: 10px;
+}
+
+.resultados {
+    overflow-y: scroll;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    gap: 8px;
+
+    grid-area: resultados;
+}
+
+.card {
+    width: 230px;
+    height: auto;
+}
+
+.card img {
+    width: auto;
+    height: auto;
+    max-width: 230px;
+    max-height: 350px;
+    box-shadow: 00px 8px 17px 2px rgba(255, 255, 255, 0.14), 0px 3px 14px 2px rgba(255, 255, 255, 0.12), 0px 5px 5px -3px rgba(255, 255, 255, 0.2);
+}
+
+.card-footer {
+    display: grid;
+    grid-template-columns: 135px 40px 40px;
+    margin-top: 5px;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.title p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.year {
+    font-size: 10px;
+    background-color: rgb(121, 28, 28);
+    color: white;
+    width: 40px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.type {
+    font-size: 10px;
+    background-color: rgb(15, 73, 83);
+    color: white;
+    width: 40px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 9px;
+    margin-bottom: 5px;
+}
+
+
+
+#navegacion{
+    grid-area: navegacion;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navegacion div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navegacion div ul{
+    display: flex;
+    color: black;
+    list-style: none;
+    margin: 10px;
+    
+}
+
+#navegacion div ul li{
+    
+    color: white;
+    padding: 10px;
+    border: solid 1px white;
+    cursor: pointer;
+   
+}
+#navegacion div ul li:active{
+    background-color: white;
+    color: black;
+   
+}
+
+.menos{
+    border-radius:  10px 0px 0px 10px ;
+}
+.mas{
+    border-radius:  0px 10px 10px 0px ;
+}
+
+.cantidad{
+    color: white;
+}
